@@ -3,6 +3,7 @@ import { ChessListPage } from './pages/ChessListPage.jsx';
 import { ChessSinglePage } from './pages/ChessSinglePage.jsx';
 import { CreateChessPage } from './pages/CreateChessPage.jsx';
 import { ChessModPage } from './pages/ChessModPage.jsx';
+import { ChessDelPage } from './pages/ChessDelPage.jsx';
 
 import './App.css';
 
@@ -23,7 +24,7 @@ export const App = () => {
         <Route path="/chess/:chessId" element={<ChessSinglePage />} />
         <Route path="/new-chess" element={<CreateChessPage />} />
         <Route path="/mod-chess/:chessId" element={<ChessModPage />} />
-        <Route path='/del-chess/:chessId' element={}></Route>
+        <Route path='/del-chess/:chessId' element={<ChessDelPage/>}></Route>
       </Routes>
     </BrowserRouter>
   );
